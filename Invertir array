@@ -1,0 +1,15 @@
+def invertir_array(array):
+    return array[::-1]
+
+cantidad = int(input("¿Cuántos elementos tendrá el array?: "))
+
+array_original = []
+for i in range(cantidad):
+    valor = input(f"Ingrese el valor #{i + 1}: ")
+    array_original.append(valor)
+
+
+array_invertido = invertir_array(array_original)
+
+print("Array original:", array_original)
+print("Array invertido:", array_invertido)
