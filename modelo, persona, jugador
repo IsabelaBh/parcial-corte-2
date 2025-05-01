@@ -1,0 +1,80 @@
+
+public class Persona {
+    
+    private String nombre;
+    private String nif;
+    private String fechaNac;
+    
+    
+    public Persona(String nombre, String nif, String fechaNac) {
+        this.nombre = nombre;
+        this.nif = nif;
+        this.fechaNac = fechaNac;
+    }
+    
+    
+    public String getNombre() {
+        return nombre;
+    }
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    public String getNif() {
+        return nif;
+    }
+    
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+    
+    public String getFechaNac() {
+        return fechaNac;
+    }
+    
+    public void setFechaNac(String fechaNac) {
+        this.fechaNac = fechaNac;
+    }
+    
+    @Override
+    public String toString() {
+        return "Persona [nombre=" + nombre + ", nif=" + nif + ", fechaNac=" + fechaNac + "]";
+    }
+}
+
+
+public class Jugador {
+    // Atributos
+    private int numFed;
+    private Persona persona;  // Asociación con Persona
+    
+    
+    public Jugador(int numFed, Persona persona) {
+        this.numFed = numFed;
+        this.persona = persona;
+    }
+    
+    // Getters y setters
+    public int getNumFed() {
+        return numFed;
+    }
+    
+    public void setNumFed(int numFed) {
+        this.numFed = numFed;
+    }
+    
+    public Persona getPersona() {
+        return persona;
+    }
+    
+    public void setPersona(Persona persona) {
+        this.persona = persona;
+    }
+    
+    @Override
+    public String toString() {
+        return "Jugador [numFed=" + numFed + ", persona=" + persona + "]";
+    }
+}
+
